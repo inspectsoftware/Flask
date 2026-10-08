@@ -1,0 +1,20 @@
+[workspace]
+resolver = "3"
+members = ["crates/sc-core", "crates/sc-ui", "crates/flask"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+windows = "0.62"
+sc-core = { path = "crates/sc-core" }
+sc-ui = { path = "crates/sc-ui" }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true

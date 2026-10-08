@@ -1,0 +1,15 @@
+[package]
+name = "flask"
+description = "Flask, the SysCentral task manager"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+build = "build.rs"
+
+[features]
+# Development only: build with an asInvoker manifest instead of requireAdministrator.
+unelevated = []
+
+[dependencies]
+sc-core.workspace = true
+sc-ui.workspace = true
