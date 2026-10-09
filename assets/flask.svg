@@ -1,0 +1,26 @@
+<!-- The Flask icon as a vector. Same geometry as make-icon.ps1, which draws the .ico. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="milk" x1="0" y1="110" x2="0" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#e6d8be"/>
+    </linearGradient>
+    <clipPath id="body">
+      <path d="M104 38H152V100L218 206L200 232H56L38 206L104 100Z"/>
+    </clipPath>
+  </defs>
+  <!-- Glass. -->
+  <path d="M104 38H152V100L218 206L200 232H56L38 206L104 100Z" fill="#34302b"/>
+  <!-- Milk, with a soft usage curve as its surface. -->
+  <g clip-path="url(#body)">
+    <path fill="url(#milk)" d="M20 178C27.8 173.8 59.4 150.6 72 150C84.6 149.4 93.8 178.5 104 174C114.2 169.5 129.2 121.8 140 120C150.8 118.2 161.6 157.5 176 162C190.4 166.5 227 151.8 236 150V244H20Z"/>
+    <circle cx="93" cy="205" r="9" fill="#fff" fill-opacity=".75"/>
+    <circle cx="150" cy="196" r="6" fill="#fff" fill-opacity=".75"/>
+  </g>
+  <!-- Bubbles rising up the neck. -->
+  <circle cx="120" cy="84" r="8" fill="#f3ece0"/>
+  <circle cx="137.500" cy="59.500" r="5.500" fill="#f3ece0"/>
+  <!-- Outline and lip. -->
+  <path d="M104 38H152V100L218 206L200 232H56L38 206L104 100Z" fill="none" stroke="#f3ece0" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M96 32H160" stroke="#f3ece0" stroke-width="18" stroke-linecap="round"/>
+</svg>
